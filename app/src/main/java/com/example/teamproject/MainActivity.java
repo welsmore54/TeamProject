@@ -2,30 +2,31 @@ package com.example.teamproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 
 public class MainActivity extends AppCompatActivity {
 
-    SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-    SharedPreferences.Editor prefEditor = prefs.edit();
+    SharedPreferences prefs;
+    public static final String profileName = "profileNameId";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        prefs = getSharedPreferences(profileName, Context.MODE_PRIVATE);
         System.out.println("Howdy World!");
-        System.out.println(prefs.getString("profile name", "Place holder Joe"));
     }
 
     @Override
-    protected void onPause() {
-        super.onPause();
-        prefEditor.putString("profile name", "Joe Shmoe");
-        prefEditor.apply();
+    protected void onResume() {
+        super.onResume();
+        SharedPreferences.Editor prefEditor = prefs.edit();
+        prefEditor.putString(profileName, "Joe Shmoe");
+        prefEditor.commit();
+        System.out.println(prefs.getString(profileName, "Place holder Joe"));
     }
-
-
 }
