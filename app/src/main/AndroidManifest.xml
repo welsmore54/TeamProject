@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".CreateAccountScreen"></activity>
+        <activity android:name=".HelpfulLinksScreen"></activity>
+        <activity android:name=".Journal"></activity>
+        <activity android:name="LoginScreen"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,6 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RecoverAccountScreen"></activity>
+        <activity android:name=".SafetyPlanScreen"></activity>
+        <activity android:name=".SeverityTestScreen"></activity>
+        <activity android:name=".VideoChatScreen"></activity>
     </application>
 
 </manifest>

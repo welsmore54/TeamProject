@@ -1,7 +1,17 @@
 package com.example.teamproject;
 
-class LoginScreen {
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+class LoginScreen extends AppCompatActivity {
     private static String userName;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.login_screen);
+    }
 
     public LoginScreen() {
         userName = "default";

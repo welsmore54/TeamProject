@@ -8,10 +8,8 @@ import android.preference.PreferenceManager;
 import android.view.inputmethod.EditorInfo;
 
 public class helloWorld {
+
     private String somethingCool;
     private String somethingElseCool;
     private String SheyIsTheCoolest;
-
-
-
 }
