@@ -5,6 +5,7 @@ import java.lang.reflect.Field;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 public class CreateAccountTest {
 
@@ -18,7 +19,7 @@ public class CreateAccountTest {
             assertEquals("default", userField.get(loginScreen));
         }
         catch (Exception e) {
-            assertTrue(false);
+            fail();
             e.printStackTrace();
         }
     }
@@ -29,6 +30,7 @@ public class CreateAccountTest {
             assertTrue(LoginScreen.verify());
         }
         catch (Exception e) {
+            fail();
             e.printStackTrace();
         }
     }
@@ -44,7 +46,7 @@ public class CreateAccountTest {
             loginScreen.checkLength();
         } catch (Exception e) {
             e.printStackTrace();
-            assertTrue(false);
+            fail();
         }
     }
 
@@ -60,7 +62,7 @@ public class CreateAccountTest {
 
             // We should never make it farther than here.
 
-            assertTrue("Line 48 - should have failed on length error.", false);
+            fail("verify_username_is_too_short should have failed on length error.");
         } catch (Exception e) {
             assertTrue(true);
         }
@@ -78,7 +80,7 @@ public class CreateAccountTest {
 
             // We should never make it farther than here.
 
-            assertTrue("Line 48 - should have failed on length error.", false);
+            fail("verify_username_is_too_long should have failed on length error.");
         } catch (Exception e) {
             assertTrue(true);
         }

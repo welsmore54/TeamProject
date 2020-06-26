@@ -11,4 +11,14 @@ public class SafetyPlanScreen extends AppCompatActivity implements Form {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.safety_plan_screen);
     }
+
+    @Override
+    public void setContent(String text) {
+
+    }
+
+    @Override
+    public String getContent() {
+        return null;
+    }
 }
