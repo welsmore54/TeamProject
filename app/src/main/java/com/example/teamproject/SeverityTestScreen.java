@@ -5,6 +5,8 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SeverityTestScreen extends AppCompatActivity {
+    private static int input = 0;
+    private static int sumInput = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
