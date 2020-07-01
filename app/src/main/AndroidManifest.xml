@@ -12,8 +12,8 @@
         <activity android:name=".CreateAccountScreen"></activity>
         <activity android:name=".HelpfulLinksScreen"></activity>
         <activity android:name=".Journal"></activity>
-        <activity android:name="LoginScreen"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".HomeScreen"></activity>
+        <activity android:name=".LoginScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

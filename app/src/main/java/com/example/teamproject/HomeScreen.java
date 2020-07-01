@@ -5,10 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeScreen extends AppCompatActivity{
 
     SharedPreferences prefs;
     public static final String profileName = "profileNameId";
@@ -16,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.home_screen);
 
         prefs = getSharedPreferences(profileName, Context.MODE_PRIVATE);
         System.out.println("Howdy World!");
@@ -31,23 +30,24 @@ public class MainActivity extends AppCompatActivity {
         System.out.println(prefs.getString(profileName, "Place holder Joe"));
     }
 
-    void goToVideoChat(View view){
+    void goToVideoChat(View view) {
 
     }
 
-    void goToLinks(View view){
+    void goToLinks(View view) {
 
     }
 
-    void goToTests(View view){
+    void goToTests(View view) {
 
     }
 
-    void goToJournal(View view){
+    void goToJournal(View view) {
 
     }
 
-    void goToSafetyPlan(View view){
+    void goToSafetyPlan(View view) {
 
     }
 }
+
