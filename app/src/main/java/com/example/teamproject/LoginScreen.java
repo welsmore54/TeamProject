@@ -9,21 +9,28 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginScreen extends AppCompatActivity {
     private static String userName;
-    public class MainActivity extends AppCompatActivity {
+    public static final String EXTRA_MESSAGE = "com.example.teamproject.MESSAGE";
 
-        public static final String EXTRA_MESSAGE = "com.example.teamproject.MESSAGE";
+    // Got rid of MainActivity for now, I don't think that we need it. I pulled all of
+    // the relevant stuff out, and left the rest in a comment in case it was important
+    // later.
+
+    /*public class MainActivity extends AppCompatActivity {
         private static final String TAG = "MainActivity";
         private Button loginBtn;
 
         public static final String SHARED_PREFS ="sharedPrefs";
         public static final String TEXT = "text";
+    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_screen);
+    }
 
-
+    public LoginScreen() {
+        userName = "default";
     }
 
     public void goToHomeScreen(View view) {
@@ -31,10 +38,6 @@ public class LoginScreen extends AppCompatActivity {
         boolean message = true;
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
-    }
-}
-    public LoginScreen() {
-        userName = "default";
     }
 
     public static boolean verify() throws Exception {
