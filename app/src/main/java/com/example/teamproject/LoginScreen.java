@@ -40,6 +40,13 @@ public class LoginScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToCreateAccount(View view) {
+        Intent intent = new Intent(this, CreateAccountScreen.class);
+        boolean message = true;
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
     public static boolean verify() throws Exception {
         return true;
     }
