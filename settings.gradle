@@ -1,2 +1,2 @@
 rootProject.name='TeamProject'
-include ':app'
+include ':app', ':commonlib', ':mobilertc1'

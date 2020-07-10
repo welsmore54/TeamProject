@@ -24,6 +24,126 @@
         <activity android:name=".SafetyPlanScreen"></activity>
         <activity android:name=".SeverityTestScreen"></activity>
         <activity android:name=".VideoChatScreen"></activity>
+
+        android:name="androidx.multidex.MultiDexApplication"
+        android:icon="@drawable/ic_launcher">
+
+        <activity android:name="com.example.teamproject.ui.InitAuthSDKActivity"
+            android:label="@string/this_app_name"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/ZMTheme.MainWindow" >
+        </activity>
+
+        <activity android:name=".ui.APIUserStartJoinMeetingActivity"
+            android:label="@string/this_app_name"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/ZMTheme.MainWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.LoginUserStartJoinMeetingActivity"
+            android:label="@string/this_app_name"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/ZMTheme.MainWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.teamproject.ui.EmailUserLoginActivity"
+            android:label="@string/this_app_name"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/ZMTheme.MainWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.teamproject.ui.SSOUserLoginActivity"
+            android:label="@string/this_app_name"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/ZMTheme.MainWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".otherfeatures.scheduleforloginuser.PreMeetingExampleActivity"
+            android:label="@string/this_app_name"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/ZMTheme.MainWindow" >
+        </activity>
+
+        <activity android:name=".otherfeatures.scheduleforloginuser.ScheduleMeetingExampleActivity"
+            android:label="@string/this_app_name"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/ZMTheme.MainWindow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.teamproject.otherfeatures.MyInviteActivity"
+            android:label="@string/invite_acitivity_name"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/ZMTheme.MainWindow" >
+            <intent-filter>
+                <action android:name="us.zoom.sdkexample.intent.action.MeetingInvite" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.teamproject.otherfeatures.MyWaitJoinActivity"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/ZMTheme.MainWindow" >
+            <!--            <intent-filter>
+                            <action android:name="us.zoom.sdkexample.intent.action.JoinBeforeHost" />
+                            <category android:name="android.intent.category.DEFAULT" />
+                        </intent-filter>-->
+        </activity>
+
+        <activity android:name="com.example.teamproject.otherfeatures.MyCallMeByPhoneActivity"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/ZMTheme.MainWindow" >
+            <!--            <intent-filter>
+                            <action android:name="us.zoom.sdkexample.intent.action.CallMyPhone" />
+                            <category android:name="android.intent.category.DEFAULT" />
+                        </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name="com.example.teamproject.inmeetingfunction.customizedmeetingui.MyMeetingActivity"
+            android:configChanges="screenSize"
+            android:theme="@style/ZMTheme.SubWindow"/>
+
+        <activity
+            android:name=".ui.MeetingSettingActivity"
+            android:configChanges="screenSize"
+            android:theme="@style/ZMTheme.SubWindow"/>
+        <activity
+            android:name=".inmeetingfunction.customizedmeetingui.RawDataMeetingActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:theme="@style/ZMTheme.SubWindow"/>
+        <activity android:name=".ui.QAActivity" />
+        <activity android:name=".ui.BreakoutRoomsAdminActivity"
+            android:configChanges="screenSize"
+            android:theme="@style/ZMTheme.SubWindow"/>
+        <activity android:name=".ui.BoEditActivity"
+            android:configChanges="screenSize"
+            android:theme="@style/ZMTheme.SubWindow"/>
+        <activity
+            android:name="com.example.teamproject.inmeetingfunction.zoommeetingui.CustomZoomUIActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="false"
+            android:theme="@style/ZMTheme.SubWindow"/>
     </application>
 
 </manifest>

@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.teamproject.initsdk.InitAuthSDKHelper;
+import com.example.teamproject.ui.InitAuthSDKActivity;
+
 public class HomeScreen extends AppCompatActivity{
 
     SharedPreferences prefs;
@@ -36,7 +39,7 @@ public class HomeScreen extends AppCompatActivity{
     }
 
     public void goToVideoChat(View view) {
-        Intent intent = new Intent(this, VideoChatScreen.class);
+        Intent intent = new Intent(this, InitAuthSDKActivity.class);
         boolean message = true;
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
