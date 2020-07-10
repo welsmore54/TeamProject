@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.teamproject">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,8 +26,8 @@
         <activity android:name=".SeverityTestScreen"></activity>
         <activity android:name=".VideoChatScreen"></activity>
 
-        android:name="androidx.multidex.MultiDexApplication"
-        android:icon="@drawable/ic_launcher">
+        <!--android:name="androidx.multidex.MultiDexApplication"
+        android:icon="@drawable/ic_launcher"> -->
 
         <activity android:name="com.example.teamproject.ui.InitAuthSDKActivity"
             android:label="@string/this_app_name"
