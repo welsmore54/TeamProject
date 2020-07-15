@@ -52,7 +52,7 @@ public class HomeScreen extends AppCompatActivity{
         startActivity(intent);
     }
 
-    public void goToTests(View view) {
+    public void goToTest(View view) {
         Intent intent = new Intent(this, SeverityTestScreen.class);
         boolean message = true;
         intent.putExtra(EXTRA_MESSAGE, message);

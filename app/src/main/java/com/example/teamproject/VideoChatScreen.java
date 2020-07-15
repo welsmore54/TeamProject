@@ -19,6 +19,7 @@ public class VideoChatScreen extends AppCompatActivity {
         try {
             Field userField = severityTest.getClass().getDeclaredField("sumInput");
             userField.setAccessible(true);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
