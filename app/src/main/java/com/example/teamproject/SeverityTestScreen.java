@@ -8,8 +8,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.teamproject.ui.InitAuthSDKActivity;
+
 public class SeverityTestScreen extends AppCompatActivity {
     private static int sumInput = 0;
+    public static final String EXTRA_MESSAGE = "com.example.teamproject.MESSAGE";
 
 
 
@@ -43,6 +46,7 @@ public class SeverityTestScreen extends AppCompatActivity {
         String question9_5 = question9.getText().toString();
         EditText question10 = (EditText) findViewById(R.id.editText10);
         String question10_5 = question10.getText().toString();
+
         int value1 = Integer.parseInt(question1_5);
         int value2 = Integer.parseInt(question2_5);
         int value3 = Integer.parseInt(question3_5);
@@ -53,8 +57,14 @@ public class SeverityTestScreen extends AppCompatActivity {
         int value8 = Integer.parseInt(question8_5);
         int value9 = Integer.parseInt(question9_5);
         int value10 = Integer.parseInt(question10_5);
-     sumInput = value1 + value2 + value3 + value4 + value5 + value6 + value7 + value8 + value9 + value10;
-     System.out.println(sumInput);
+
+        sumInput = value1 + value2 + value3 + value4 + value5 + value6 + value7 + value8 + value9 + value10;
+        System.out.println(sumInput);
+
+        Intent intent = new Intent(this, InitAuthSDKActivity.class);
+        boolean message = true;
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
 
     }
 }
