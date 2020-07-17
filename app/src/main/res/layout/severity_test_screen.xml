@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#5BC6D8"
     tools:context=".MainActivity">
 
     <Button
@@ -26,7 +27,6 @@
         android:layout_marginBottom="36dp"
         android:ems="10"
         android:inputType="number"
-        android:text="Input"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -319,10 +319,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
-        android:layout_marginLeft="101dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="130dp"
-        android:layout_marginRight="130dp"
         android:layout_marginBottom="22dp"
         android:text="Please input a number between 1 and 10."
         app:layout_constraintBottom_toTopOf="@+id/textView5"

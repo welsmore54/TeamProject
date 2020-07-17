@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SafetyPlanScreen" >
+    android:background="#5BC6D8"
+    tools:context=".SafetyPlanScreen">
 
     <Button
         android:id="@+id/button9"

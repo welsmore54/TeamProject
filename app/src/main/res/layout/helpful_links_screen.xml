@@ -3,8 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#5BC6D8"
     android:orientation="vertical"
     tools:context=".HelpfulLinksScreen">
+
+    <view
+        android:id="@+id/YoutubePlay"
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/YoutubePlayBtn"
@@ -12,9 +19,25 @@
         android:layout_height="wrap_content"
         android:text="Play" />
 
-    <view
-        android:id="@+id/YoutubePlay"
-        class="com.google.android.youtube.player.YouTubePlayerView"
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/YoutubePlay_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/YoutubePlayBtn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
 </LinearLayout>
