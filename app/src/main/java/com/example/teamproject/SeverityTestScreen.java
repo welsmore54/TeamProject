@@ -10,26 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SeverityTestScreen extends AppCompatActivity {
     private static int sumInput = 0;
-    EditText question1 = (EditText) findViewById(R.id.editText1);
-    String question1_5 = question1.getText().toString();
-    EditText question2 = (EditText) findViewById(R.id.editText2);
-    String question2_5 = question2.getText().toString();
-    EditText question3 = (EditText) findViewById(R.id.editText3);
-    String question3_5 = question3.getText().toString();
-    EditText question4 = (EditText) findViewById(R.id.editText4);
-    String question4_5 = question4.getText().toString();
-    EditText question5 = (EditText) findViewById(R.id.editText5);
-    String question5_5 = question5.getText().toString();
-    EditText question6 = (EditText) findViewById(R.id.editText6);
-    String question6_5 = question6.getText().toString();
-    EditText question7 = (EditText) findViewById(R.id.editText7);
-    String question7_5 = question7.getText().toString();
-    EditText question8 = (EditText) findViewById(R.id.editText8);
-    String question8_5 = question8.getText().toString();
-    EditText question9 = (EditText) findViewById(R.id.editText9);
-    String question9_5 = question9.getText().toString();
-    EditText question10 = (EditText) findViewById(R.id.editText10);
-    String question10_5 = question10.getText().toString();
+
 
 
     @Override
@@ -42,6 +23,26 @@ public class SeverityTestScreen extends AppCompatActivity {
     }
 
     public void determine_input(View view) {
+        EditText question1 = (EditText) findViewById(R.id.editText1);
+        String question1_5 = question1.getText().toString();
+        EditText question2 = (EditText) findViewById(R.id.editText2);
+        String question2_5 = question2.getText().toString();
+        EditText question3 = (EditText) findViewById(R.id.editText3);
+        String question3_5 = question3.getText().toString();
+        EditText question4 = (EditText) findViewById(R.id.editText4);
+        String question4_5 = question4.getText().toString();
+        EditText question5 = (EditText) findViewById(R.id.editText5);
+        String question5_5 = question5.getText().toString();
+        EditText question6 = (EditText) findViewById(R.id.editText6);
+        String question6_5 = question6.getText().toString();
+        EditText question7 = (EditText) findViewById(R.id.editText7);
+        String question7_5 = question7.getText().toString();
+        EditText question8 = (EditText) findViewById(R.id.editText8);
+        String question8_5 = question8.getText().toString();
+        EditText question9 = (EditText) findViewById(R.id.editText9);
+        String question9_5 = question9.getText().toString();
+        EditText question10 = (EditText) findViewById(R.id.editText10);
+        String question10_5 = question10.getText().toString();
         int value1 = Integer.parseInt(question1_5);
         int value2 = Integer.parseInt(question2_5);
         int value3 = Integer.parseInt(question3_5);
