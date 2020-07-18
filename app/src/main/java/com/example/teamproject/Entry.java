@@ -1,6 +1,8 @@
 package com.example.teamproject;
 
-public class Entry implements Form {
+import java.io.Serializable;
+
+public class Entry implements Form, Serializable {
 
     private String content;
 

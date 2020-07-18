@@ -25,6 +25,7 @@
         <activity android:name=".SafetyPlanScreen"></activity>
         <activity android:name=".SeverityTestScreen"></activity>
         <activity android:name=".VideoChatScreen"></activity>
+        <activity android:name=".JournalEditor"></activity>
 
         <!--android:name="androidx.multidex.MultiDexApplication"
         android:icon="@drawable/ic_launcher"> -->
