@@ -70,6 +70,11 @@ public class Journal extends AppCompatActivity implements View.OnClickListener {
         startActivity(intent);
     }
 
+    public void goHome(View view) {
+        Intent intent = new Intent(this, HomeScreen.class);
+        startActivity(intent);
+    }
+
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(this, JournalEditor.class);
