@@ -11,19 +11,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.teamproject.ui.InitAuthSDKActivity;
 
 public class SeverityTestScreen extends AppCompatActivity {
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.severity_test_screen);
-    }
     private static int sumInput = 0;
     public static final String EXTRA_MESSAGE = "com.example.teamproject.MESSAGE";
 
 
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.severity_test_screen);
 
 
 
+    }
 
     public void determine_input(View view) {
         EditText question1 = (EditText) findViewById(R.id.editText1);
@@ -57,8 +57,9 @@ public class SeverityTestScreen extends AppCompatActivity {
         int value8 = Integer.parseInt(question8_5);
         int value9 = Integer.parseInt(question9_5);
         int value10 = Integer.parseInt(question10_5);
-     sumInput = value1 + value2 + value3 + value4 + value5 + value6 + value7 + value8 + value9 + value10;
-     System.out.println(sumInput);
+
+        sumInput = value1 + value2 + value3 + value4 + value5 + value6 + value7 + value8 + value9 + value10;
+        System.out.println(sumInput);
 
         Intent intent = new Intent(this, InitAuthSDKActivity.class);
         boolean message = true;
@@ -66,5 +67,4 @@ public class SeverityTestScreen extends AppCompatActivity {
         startActivity(intent);
 
     }
-
 }

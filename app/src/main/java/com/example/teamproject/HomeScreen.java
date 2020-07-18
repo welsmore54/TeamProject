@@ -26,7 +26,6 @@ public class HomeScreen extends AppCompatActivity{
         setContentView(R.layout.home_screen);
 
         prefs = getSharedPreferences(profileName, Context.MODE_PRIVATE);
-        System.out.println("Howdy World!");
     }
 
     @Override
